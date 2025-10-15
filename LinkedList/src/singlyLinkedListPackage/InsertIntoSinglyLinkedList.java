@@ -8,29 +8,38 @@ import linkedListUtilityPackage.LinkedListHelper;
 import linkedListUtilityPackage.SinglyLinkedListNode;
 
 /**
- * Demonstrates insertion operations in a Singly Linked List.
+ * DSA Topic - Insertion Operations in Singly Linked List
+ * ----------------------------------------
+ * 📘 Overview:
+ * Demonstrates different insertion operations in a singly linked list.
+ * The program supports inserting nodes at the beginning, at the end,
+ * or at any given index in the list.
  *
- * <p><b>Supported Operations:</b>
- * <ul>
- *   <li>Insert at the beginning</li>
- *   <li>Insert at the end</li>
- *   <li>Insert at a specific index</li>
- * </ul>
+ * 🧩 Example:
+ * Input  : 10 20 30
+ * Operation: Insert 15 at index 1
+ * Output : 10 → 15 → 20 → 30
  *
- * <p>The program accepts user input for initial elements and then performs insertion
- * operations interactively via console options.
+ * ⚙️ Approach:
+ * - Parse input into a list and create a singly linked list.
+ * - Use menu-driven options to perform insertion operations.
+ * - Insert at head, tail, or specific index by adjusting next pointers.
  *
- * <p><b>Example:</b><br>
- * Input List: 10 20 30<br>
- * Insert 15 at index 1 → Output: 10 → 15 → 20 → 30
+ * 🧮 Complexity Analysis:
+ * Insert at Head : O(1)
+ * Insert at Tail : O(n)
+ * Insert at Index: O(n)
  *
- * <p><b>Complexity:</b>
- * <ul>
- *   <li>Insert at head → O(1)</li>
- *   <li>Insert at tail or index → O(n)</li>
- * </ul>
+ * 🧠 Key Insights:
+ * - Reinforces understanding of pointer manipulation in linked lists.
+ * - Highlights traversal logic and handling of edge cases.
  *
- * <p><b>Author:</b> Nishant Anand
+ * 🔍 Related Topics:
+ * Linked Lists, Pointer Manipulation, Iterative Traversal
+ *
+ * ----------------------------------------
+ * Author: Nishant Anand
+ * Repository: DSA-Java-Playground
  */
 public class InsertIntoSinglyLinkedList {
 
@@ -39,7 +48,7 @@ public class InsertIntoSinglyLinkedList {
         System.out.println("===== Welcome to Linked List Insertion =====");
         System.out.print("Enter elements of Int Linked List space separated: ");
 
-        // Parse input line into integer list
+        // Parse user input into integer list
         List<Integer> initialList = new ArrayList<>();
         String initialString = sc.nextLine();
         String[] initial = initialString.split(" ");
@@ -50,7 +59,7 @@ public class InsertIntoSinglyLinkedList {
             }
         }
 
-        // Create linked list from input
+        // Create initial linked list
         SinglyLinkedListNode<Integer> rootNode = LinkedListHelper.createSinglyLinkedList(initialList);
         System.out.printf("\nInitial LinkedList: %s\n\n", rootNode);
 
@@ -108,30 +117,32 @@ public class InsertIntoSinglyLinkedList {
     /**
      * Prints the linked list in its current state.
      *
-     * @param rootNode head of the linked list
+     * @param rootNode head node of the linked list
      */
     private static void print(SinglyLinkedListNode<Integer> rootNode) {
         System.out.println("\n==> Final LinkedList: " + rootNode + "\n");
     }
 
     /**
-     * Inserts a new node with the given value at the specified index (or at the end).
+     * Inserts a new node into the linked list at the specified position.
      *
-     * <p>If {@code insertLast} is true, the node is appended at the end of the list
-     * regardless of the {@code index} value.
+     * ⚙️ Logic:
+     * - Handles three cases:
+     *   1. Empty list → Creates new node if index == 0
+     *   2. Insert at head → Prepend new node
+     *   3. Insert at tail or index → Traverse until (index - 1)
+     * - Uses {@code insertLast} flag to control tail insertion.
      *
-     * <p><b>Edge Cases Handled:</b>
-     * <ul>
-     *   <li>Null head node (empty list)</li>
-     *   <li>Negative index (treated as 0)</li>
-     *   <li>Insertion beyond the tail (inserts at end)</li>
-     * </ul>
+     * 🧠 Edge Cases:
+     * - Negative index → treated as 0
+     * - Insertion beyond tail → adds at the end
+     * - Empty list with invalid index → throws Exception
      *
-     * @param rootNode   the head node of the linked list
-     * @param index      target index for insertion (0-based)
-     * @param value      value to be inserted
-     * @param insertLast true if inserting at the end regardless of index
-     * @return updated head node after insertion
+     * @param rootNode   head of the linked list
+     * @param index      index at which new node should be inserted
+     * @param value      value to insert
+     * @param insertLast if true, node is appended regardless of index
+     * @return updated head node of the linked list
      * @throws Exception if insertion index is invalid for an empty list
      */
     private static SinglyLinkedListNode<Integer> insertIntoSinglyLinkedList(
@@ -140,10 +151,8 @@ public class InsertIntoSinglyLinkedList {
             int value,
             boolean insertLast) throws Exception {
 
-        // Treat negative index as 0
-        if (index < 0) {
-            index = 0;
-        }
+        // Treat negative index as 0 for safety
+        if (index < 0) index = 0;
 
         // Case 1: Empty list
         if (rootNode == null) {
@@ -159,20 +168,22 @@ public class InsertIntoSinglyLinkedList {
             return new SinglyLinkedListNode<>(value, rootNode);
         }
 
-        // Traverse to the insertion point
+        // Traverse to the desired position
         SinglyLinkedListNode<Integer> curr = rootNode;
         int currIndex = 0;
 
+        // If insertLast is true → go till end
         while (insertLast ? curr.next != null : currIndex < index - 1) {
             curr = curr.next;
             currIndex++;
+
+            // Stop if reached tail before target index
             if (curr.next == null && currIndex < index - 1) {
-                // If index exceeds list length, insert at tail
                 break;
             }
         }
 
-        // Create and insert new node
+        // Create new node and adjust pointers
         SinglyLinkedListNode<Integer> newNode = new SinglyLinkedListNode<>(value, curr.next);
         curr.next = newNode;
 

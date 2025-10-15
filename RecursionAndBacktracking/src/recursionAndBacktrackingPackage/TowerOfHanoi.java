@@ -128,6 +128,12 @@ public class TowerOfHanoi {
      * Recursive Tower of Hanoi solution with actual visualization using stacks.
      * <p>
      * After each move, it prints the current state of all pegs.
+     * Basically for n disks in sourcePeg, we need to move n-1 disks to aux peg, then move nth disk
+     * to target peg, then move n-1 disks from aux peg to target peg.
+     * So to break it down, we get the following smaller problems
+     * 1. Moving n-1 disks from source to aux - So for this piece, aux becomes the target.
+     * 2. Moving nth disk from source to target - base case.
+     * 3. Moving n-1 disks from aux to target - So for this case, aux becomes the source.
      *
      * @param numberOfDisks the number of disks to move
      * @param sourcePeg     index of the source peg (0-based)

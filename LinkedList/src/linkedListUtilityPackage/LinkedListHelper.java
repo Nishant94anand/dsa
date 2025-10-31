@@ -122,14 +122,14 @@ public class LinkedListHelper {
 		return linkedList;
 	}
 	
-	public static void printCircularLinkedList(SinglyLinkedListNode<Integer> head)
+	public static <T> void printCircularLinkedList(SinglyLinkedListNode<T> head)
 	{
 		if (head == null) {
 			System.out.println("null");
 			return;
 		}
 		
-		SinglyLinkedListNode<Integer> curr = head;
+		SinglyLinkedListNode<T> curr = head;
 		
 		StringBuilder sb = new StringBuilder();
 		do {
@@ -168,5 +168,4 @@ public class LinkedListHelper {
 		
 		return rootNode;
 	}
-
 }

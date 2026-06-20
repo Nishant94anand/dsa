@@ -75,6 +75,8 @@ public class TowerOfHanoi {
 
         // Initialize first peg with disks (largest at bottom)
         Stack<Integer> peg1 = new Stack<>();
+        peg1.push(5);
+        peg1.push(4);
         peg1.push(3);
         peg1.push(2);
         peg1.push(1);
@@ -96,7 +98,7 @@ public class TowerOfHanoi {
         System.out.println("\n===== With Visualization =====");
 
         // Demonstrate recursive Tower of Hanoi with actual peg state visualization
-        towerOfHanoi(3, 0, 2, 1, pegStatus);
+        towerOfHanoi(5, 0, 2, 1, pegStatus);
     }
 
     /**

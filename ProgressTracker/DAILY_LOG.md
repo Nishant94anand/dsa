@@ -67,3 +67,16 @@ Copy the following format when recording a new session. Use the date in **YYYY-M
 - **Resume checkpoint:** Await learner's reasoning on the memory-constrained pair-sum choice. Review reasoning, then continue complexity foundations (best/worst cases, input size, recursion cost, amortized analysis).
 - **Next step:** Review user's response to the one focused question before proceeding.
 - **Links / GitHub verification:** No chapter notes or practice implementations created.
+
+### Completion follow-up — DSA-0.01 (2026-11-01)
+- **Type:** Concept review, reasoning checks and learner-confirmed chapter completion.
+- **Chapter / problem:** `DSA-0.01 — Algorithmic Thinking and Complexity`.
+- **Session state:** **COMPLETED (learner explicitly confirmed)**. This follow-up supersedes the earlier STARTED checkpoint for current session state.
+- **Covered:** Pair-sum baseline vs HashSet and sorting; time/space trade-offs; immutable input + O(1) memory constraint; sequential-loop growth; best/worst bounds; geometric ArrayList growth and preallocation; recursive call-tree time vs stack-depth distinction; complete reference notes added for the remainder of the syllabus scope.
+- **Learner evidence:** Correctly identified linear sequential-loop cost, memory-restricted O(n²)/O(1) pair search, ArrayList preallocation benefit, and O(n) time for two-branch halving recursion. Initially answered O(n) stack space for that recursion; received corrective explanation of O(log n) stack depth. No new Java practice solution was independently implemented or committed.
+- **Notes artifact:** [Detailed chapter note](../Notes/00-Foundations/Algorithmic-Thinking-and-Complexity/README.md), including visuals/dry runs, complexity rules, recursion, amortized analysis, Java traps, trade-offs, concept checkpoints with answers, a truthful solved-practice table and separate optional verified LeetCode links.
+- **Completion vs mastery:** Coverage completion approved; independent mastery not certified. Retention/recursion-stack question recommended for later revision.
+- **Progress tracker:** `ProgressTracker/PROGRESS.md` does not yet exist; no tracker status/rating was fabricated or changed.
+- **Stopped at / open questions:** None blocking chapter completion. The next phase-0 chapter has not begun yet.
+- **Resume checkpoint:** Start `DSA-0.02 — Java for DSA Interviews`, fast-tracking common syntax and focusing on collection choice, hashing/equality, comparators, primitive boxing, overflow and hidden costs. Revisit `mystery(n)` stack-space intuition later.
+- **Links / GitHub verification:** Notes and Contents updated in the chapter completion commit; no Java code solution committed in this session.

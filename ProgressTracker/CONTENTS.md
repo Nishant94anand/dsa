@@ -34,7 +34,7 @@
 
 | # | Chapter ID | Chapter / syllabus coverage | Notes | Practice code |
 |---:|---|---|---|---|
-| 1 | `DSA-0.01` | [Algorithmic Thinking and Complexity](../Curriculum/SYLLABUS.md#algorithmic-thinking-and-complexity-dsa-001) | — | — |
+| 1 | `DSA-0.01` | [Algorithmic Thinking and Complexity](../Curriculum/SYLLABUS.md#algorithmic-thinking-and-complexity-dsa-001) | [Completed chapter note](../Notes/00-Foundations/Algorithmic-Thinking-and-Complexity/README.md) | — |
 | 2 | `DSA-0.02` | [Java for DSA Interviews](../Curriculum/SYLLABUS.md#java-for-dsa-interviews-dsa-002) | — | — |
 | 3 | `DSA-0.03` | [Correctness, Testing and Interview Coding](../Curriculum/SYLLABUS.md#correctness-testing-and-interview-coding-dsa-003) | — | — |
 

@@ -80,3 +80,21 @@ Copy the following format when recording a new session. Use the date in **YYYY-M
 - **Stopped at / open questions:** None blocking chapter completion. The next phase-0 chapter has not begun yet.
 - **Resume checkpoint:** Start `DSA-0.02 — Java for DSA Interviews`, fast-tracking common syntax and focusing on collection choice, hashing/equality, comparators, primitive boxing, overflow and hidden costs. Revisit `mystery(n)` stack-space intuition later.
 - **Links / GitHub verification:** Notes and Contents updated in the chapter completion commit; no Java code solution committed in this session.
+
+
+---
+
+## 2026-11-02 — DSA-0.02 Java for DSA Interviews (learner-confirmed completion)
+
+- **Type:** Concept discussion, Java API semantics, repository instruction refinement, learner-confirmed completion and reference-note publication.
+- **Chapter / problem:** `DSA-0.02 — Java for DSA Interviews`.
+- **Session state:** **COMPLETED (learner explicitly approved on 2026-11-02).** Completion means chapter coverage and documentation closed under the integrated-Java approach, **not independently demonstrated mastery of all APIs**.
+- **Covered live:** How mutable equality/hash fields break HashMap retrieval; HashMap lookup expected O(1); combined HashMap + PriorityQueue leaderboard architecture; PriorityQueue's lack of automatic reheapification when an element mutates and O(n) arbitrary removal; TreeMap/TreeSet sorted-by-key behavior and remove/reinsert requirement, with comparator tie-breakers for equal scores.
+- **Learner evidence:** Independently predicted `null` and correctly explained HashMap bucket mislookup after `Employee.id` mutation. Proposed a plausible ID map + heap approach for leaderboard; assumed direct score mutation reorders a heap and wrote HashMap lookup O(n), both corrected. Considered TreeMap for ordered updates and accepted explanation of ordering and mutable-key rules. No independently coded Java implementation or tests were submitted for this chapter.
+- **Reference coverage and pedagogy decision:** Published a **detailed chapter note** covering array/list, maps/sets, trees, deque, heap, text, sorting, comparators, generics, boxing, overflow, reference semantics, complexity, examples and common traps. Learner chose to integrate Java library/API study into the relevant upcoming DSA chapters; [Teaching Playbook](../CopilotInstructions/TEACHING_AND_VISUALS_PLAYBOOK.md) was updated and committed separately for this.
+- **Notes artifact:** [DSA-0.02 detailed reference notes](../Notes/00-Foundations/Java-for-DSA-Interviews/README.md). Teaching snippets are not misrepresented as independently solved practice artifacts.
+- **Completion vs mastery:** Completion explicitly approved; broad API usage and independent coding **not assessed**. Revisit API-specific edge cases hands-on during corresponding chapters. No Java practice solution committed in this completion.
+- **Progress tracker:** `ProgressTracker/PROGRESS.md` still does not exist; no status row or discussion rating was fabricated there. Completion is truthfully recorded here and in the chapter note/Contents.
+- **Stopped at / open questions:** No blocking question for this chapter. Future revision: implement and test a score-based ordered leaderboard with immutable ranking keys and explain its heap/tree trade-offs.
+- **Resume checkpoint / next step:** Start `DSA-0.03 — Correctness, Testing and Interview Coding`, calibrated for an experienced developer. Focus live time on invariants, counterexamples, test design and interview follow-up changes rather than basic Java syntax. Later cover each relevant Java interface/class inside its corresponding DSA lesson.
+- **Links / GitHub verification:** Notes and Contents published together with this log entry; no newly solved Java file created.

@@ -54,3 +54,16 @@ Copy the following format when recording a new session. Use the date in **YYYY-M
 - **Resume checkpoint:** If the learner asks to **start DSA learning** without naming another topic, begin with **`DSA-0.01 — Algorithmic Thinking and Complexity`**. Give a short interview-oriented concept and visual/example, then one diagnostic or guided exercise; do not assume any prior attempt. If the learner requests **repo setup** instead, continue with Copilot instructions / progress-tracker design rather than starting a lesson.
 - **Next step:** Follow the learner's requested branch: start `DSA-0.01` interactively, or build remaining learning instructions and status tracking. Record the precise new checkpoint after that session.
 - **Links / GitHub verification:** [Syllabus](../Curriculum/SYLLABUS.md) · [Contents](CONTENTS.md). No chapter-note or practice-solution artifact for this entry.
+
+---
+
+## 2026-11-01 — DSA-0.01 Algorithmic Thinking and Complexity (Session 01)
+- **Type:** Concept lesson.
+- **Chapter / problem:** `DSA-0.01` — Algorithmic Thinking and Complexity.
+- **Session state:** STARTED (first lesson begun; not completed).
+- **Covered:** Introduced brute-force pair-sum scanning versus HashSet complement lookup; O(n²) versus expected O(n), time/auxiliary-space trade-off and asymptotic growth illustration.
+- **Learner evidence:** No learner answer or Java implementation yet; these were tutor-provided examples only.
+- **Stopped at / open questions:** First understanding check pending: on an unsorted array of 100,000 numbers, if extra memory is severely limited, which approach (nested-loop pairs or HashSet) should be selected, and why? Explain time-space trade-off; discuss whether input sorting is permitted.
+- **Resume checkpoint:** Await learner's reasoning on the memory-constrained pair-sum choice. Review reasoning, then continue complexity foundations (best/worst cases, input size, recursion cost, amortized analysis).
+- **Next step:** Review user's response to the one focused question before proceeding.
+- **Links / GitHub verification:** No chapter notes or practice implementations created.

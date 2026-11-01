@@ -18,6 +18,23 @@ For an unfamiliar topic, teach in this order when appropriate:
 - Adapt depth: skip repetition when knowledge is demonstrated; slow down, redraw state transitions or use a simpler case when confusion appears.
 - Move naturally into guided practice and review. Never require research-level proofs or obscure extensions to complete a chapter outside the agreed syllabus.
 
+## 1A. Teach the corresponding Java interface/class alongside each DSA topic
+
+**Integrated Java-library learning is mandatory.** Do not stretch a standalone Java-collections survey when the relevant APIs can be taught more meaningfully alongside their underlying data structure or algorithm. The learner is an experienced Java software engineer: fast-track demonstrated basics, but never assume familiarity with subtle API semantics or operational pitfalls.
+
+For each relevant topic, teach the appropriate Java standard-library interface/class **during that topic's lesson**, not as disconnected memorization:
+- Arrays/dynamic arrays: arrays, `Arrays`, `ArrayList`, resizing and copy costs.
+- Stacks/queues/deques: `Deque`, `ArrayDeque`, queue/stack methods and limits.
+- Hashing: `Map`, `HashMap`, `Set`, `HashSet`, `equals()`, `hashCode()`, mutable-key hazards.
+- Heaps/top-K: `PriorityQueue`, comparators, min/max heap behavior, mutation not reheapifying, and `remove(Object)` costs.
+- Balanced trees/ordered indexing: `TreeMap`, `TreeSet`, `NavigableMap`/`NavigableSet`, sorted operations, duplicate/tie policies, and mutable ordering-key hazards.
+- Sorting: `Arrays.sort`, `Collections.sort`, `Comparator`, `Comparable`, stability when relevant.
+- Graphs and other topics: teach the Java collection types used in their actual representations and implementations.
+
+**Within each topic:** connect abstract operation → Java API → short runnable Java example → API-specific complexity and correctness trap → practical selection trade-off. Explicitly distinguish what the theoretical structure can support from what the Java standard-library implementation actually exposes or guarantees (e.g. PriorityQueue does not automatically reorder a mutated element; TreeMap/TreeSet do not reindex mutated comparison keys). Use realistic scenarios or concise hands-on code only when it teaches a material skill; don't add redundant quizzes or boilerplate.
+
+**Live-lesson budget versus notes:** Spend live time on interview-relevant mechanisms, unknown behavior, invariants, coding and real gaps; skip known syntax quickly. At authorized chapter completion, include **comprehensive** Java API reference detail, use cases, method choices, complexity, limitations, pitfalls and examples in the corresponding topic's standalone notes, even when the live explanation was brief. Cross-reference elsewhere rather than duplicating entire chapters unnecessarily. Preserve the canonical syllabus and chapter-completion approval workflow; do not automatically mark a chapter completed merely because Java material is redistributed.
+
 ## 2. Relatable examples: Bihar and everyday life, not a theme park
 
 Illustrative prompts that **may** help (use selectively):

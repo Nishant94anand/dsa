@@ -98,3 +98,18 @@ Copy the following format when recording a new session. Use the date in **YYYY-M
 - **Stopped at / open questions:** No blocking question for this chapter. Future revision: implement and test a score-based ordered leaderboard with immutable ranking keys and explain its heap/tree trade-offs.
 - **Resume checkpoint / next step:** Start `DSA-0.03 — Correctness, Testing and Interview Coding`, calibrated for an experienced developer. Focus live time on invariants, counterexamples, test design and interview follow-up changes rather than basic Java syntax. Later cover each relevant Java interface/class inside its corresponding DSA lesson.
 - **Links / GitHub verification:** Notes and Contents published together with this log entry; no newly solved Java file created.
+
+
+---
+
+## 2026-11-02 — DSA-0.03 Correctness, Testing and Interview Coding (Session 01)
+- **Type:** Concept lesson and Java code-review calibration.
+- **Chapter / problem:** `DSA-0.03 — Correctness, Testing and Interview Coding`.
+- **Session state:** STARTED. Learner requested the next chapter; no completion approval.
+- **Scope and pace:** Focus on meaningful invariants, counterexamples, deterministic test matrices, boundary/overflow contracts, and confident interview explanation. Experienced Java developer: fast-track basic syntax and generic testing boilerplate. Completed chapter notes will be comprehensive when explicitly approved, not published on start.
+- **Covered / teaching plan:** Introduce loop-invariant reasoning with a small maximum-scan trace; then code-review a deliberately flawed second-largest-distinct implementation. The example is tutor-provided, not a solved student artifact.
+- **Learner evidence:** None yet for this chapter; awaiting the first reasoning response.
+- **Stopped at / open question:** Given the `secondLargestDistinct(int[])` method with `max` and `second` initialized to `Integer.MIN_VALUE` and no check for fewer than two distinct values, propose minimal counterexamples and identify the violated contract (throw `IllegalArgumentException` when no second distinct value).
+- **Resume checkpoint:** Await learner's smallest failing input(s) and explanation; review actual reasoning before extending into invariant preservation, boundary/overflow testing and a concise test matrix.
+- **Next step:** Targeted teaching/review, then learner-led short Java test or repair if the gap warrants coding.
+- **Links / GitHub verification:** Start checkpoint only; no chapter note or practice code published.

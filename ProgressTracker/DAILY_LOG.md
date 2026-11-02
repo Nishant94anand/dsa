@@ -145,3 +145,10 @@ Copy the following format when recording a new session. Use the date in **YYYY-M
 - **Stopped at / open question:** Opening lesson: select the right representation (boolean/set, index-map, frequency array/map, grouping-map), and examine whether a string-frequency signature or numeric-key assumptions remain valid under changed requirements.
 - **Resume checkpoint:** Continue DSA-1.01 from opening lesson; review first learner response before selecting a new pair-coding problem. No code attempt yet in this chapter.
 - **Tracker:** `ProgressTracker/PROGRESS.md` still absent; status is truthfully logged here, not recorded in a nonexistent file.
+
+
+### Learner-directed practice correction — DSA-1.01 (2026-11-02)
+- **Learner explicit instruction:** Previously completed problems in the older separate `leetcode` repository may not be retained in memory. Do **not** skip or fast-track them based solely on old saved solutions.
+- **Updated teaching plan:** Teach DSA-1.01 topics freshly, including Two Sum, Valid Anagram and Group Anagrams, and offer fresh learner-led Java implementations and fresh contract-based tests without consulting/copying old solutions during attempts. Previous repo solutions are archival context only, not new chapter attempts or proof of current mastery.
+- **Pedagogy:** Retain efficient interview-first teaching (substantive intuition and meaningful hands-on before micro-quizzes); this correction overrides the prior suggestion to skip the earlier solved problems.
+- **New checkpoint:** Begin fresh with array/index traversal and Two Sum; first obtain baseline reasoning, then derive the appropriate representation and allow a new Java implementation. Do not prematurely reveal the full optimized solution.

@@ -130,3 +130,18 @@ Copy the following format when recording a new session. Use the date in **YYYY-M
 - **Stopped at / open questions:** No blocking topic. Future optional reinforcement: construct test oracles, inspect mutable state, and design counterexamples in ongoing DSA questions.
 - **Resume checkpoint:** **Begin DSA-1.01 — Arrays, Strings and Hashing (Phase 1).** Teach relevant Java APIs alongside algorithms, use the learner's experience to fast-track basics, and continue test-first reasoning during hands-on problems.
 - **GitHub links:** Notes, code, test harness, and Contents published in one coordinated completion commit.
+
+
+---
+
+## 2026-11-02 — DSA-1.01 Arrays, Strings and Hashing (Session 01)
+- **Type:** Learner explicitly started the chapter; latest curriculum and all six instruction files fetched.
+- **Chapter / problem:** DSA-1.01 — Arrays, Strings and Hashing (Phase 1).
+- **Session state:** **STARTED**. No completion approval; no chapter notes, new solved Java code or rating published on start.
+- **Prerequisite checkpoint:** DSA-0.01, DSA-0.02 and DSA-0.03 completed; DSA-0.03 latest learning record documents two solved longest-consecutive implementations and a testing-as-ongoing-habit agreement.
+- **Prior solutions verified, not fresh achievements:** Existing Q1 Two Sum (HashMap complementary lookup), Q242 Valid Anagram (26-element frequency array), and Q49 Group Anagrams (26-element frequency signature grouped in HashMap) are in the **separate `Nishant94anand/leetcode` repository**; those files were read for calibration. Do not pretend these were newly solved in DSA-1.01.
+- **Learning objective:** Array/string traversals and mutation contracts, membership and complementary lookup, frequency counts and group keys, duplicates, sorting versus hashing trade-offs, Java Map/Set/StringBuilder APIs, correct character-domain/Unicode assumptions.
+- **Pace:** Experienced Java developer. Skip tedious basic syntax and rote repetition of earlier solved Two Sum/Valid Anagram/Group Anagrams. Teach one cohesive pattern trade-off and ask a focused new reasoning challenge before independent fresh practice. Integrate Java APIs and few high-impact tests per problem.
+- **Stopped at / open question:** Opening lesson: select the right representation (boolean/set, index-map, frequency array/map, grouping-map), and examine whether a string-frequency signature or numeric-key assumptions remain valid under changed requirements.
+- **Resume checkpoint:** Continue DSA-1.01 from opening lesson; review first learner response before selecting a new pair-coding problem. No code attempt yet in this chapter.
+- **Tracker:** `ProgressTracker/PROGRESS.md` still absent; status is truthfully logged here, not recorded in a nonexistent file.
